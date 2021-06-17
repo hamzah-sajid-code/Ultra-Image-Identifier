@@ -1,0 +1,36 @@
+body {
+    background-color: peachpuff;
+    font-family: 'Roboto Mono', monospace;
+    ;
+}
+
+.header img {
+    border-radius: 40px;
+}
+
+.header {
+    background-color: white;
+}
+.camera_div{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+}
+.camera_class{
+    width: 300px;
+    height: 300px;
+    border: 1px dashed black;
+    background-color: cyan;
+}
+.footer_div img{
+    width: 70px;
+}
+.footer_div h4{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow: 5px 5px 18px white;
+}
+.footer_div{
+    margin-bottom: 70px;
+}

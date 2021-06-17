@@ -1,0 +1,54 @@
+
+<html>
+  <head>
+    <title>Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;500&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+      <h1 class="header">Image Identification App <img src="logo.gif" width="60px" height="60px"></h1>
+    </center>
+    <div class="main">
+      <center>
+      <div class="col-xs-12 col-sm-6 camera_div">
+        <label style="font-family: 'Roboto Mono', monospace;">Webcam</label>
+        <div id="camera" class="camera_class"></div>
+        <br>
+        <button class="btn btn-info" style="font-size: large;" onclick="take_image()">Take Image</button>
+      </div>
+      <div class="col-xs-12 col-sm-6 camera_div">
+        <label style="font-family: 'Roboto Mono', monospace;">Image</label>
+        <div id="result" class="camera_class"></div>
+        <br>
+        <button class="btn btn-success" style="font-size: large;" onclick="identify_image()">Identify Image</button>
+      </div>
+    </center>
+    <div class="col-xs-12 footer_div">
+      <h4 class="col-sm-6 col-xs-12">
+        <img src="blub.gif">
+        <span id="object_name"></span>
+      </h4>
+    </div>
+    </div>
+    <div class="footer" style="font-size: 20px; position: fixed;bottom: 0px; text-align: center; background: linear-gradient(lime, cyan);width: 100%;">
+      <p>
+      Developed by: Hamzah Sajid
+      </p>
+    </div>
+
+<script src="main.js"></script>
+  </body>
+</html>
